@@ -14,7 +14,7 @@
 <script>
 import { UserOutlined, LaptopOutlined, NotificationOutlined, LoginOutlined } from '@ant-design/icons-vue'
 import { defineComponent, ref } from 'vue'
-import LayoutMenu from '../components/Layout.vue'
+import LayoutMenu from './Layout.vue'
 import { useRouter } from 'vue-router'
 import store from '../store'
 import { Modal } from 'ant-design-vue'
