@@ -1,7 +1,4 @@
 <template>
-  <!-- <a-config-provider :locale="locale">
-    <router-view />
-  </a-config-provider> -->
   <router-view></router-view>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
-  <Layouthead>
+  <layout>
     <template v-slot>
-      <a-button class="editable-add-btn" style="margin-bottom: 8px" @click="handleAdd">新增</a-button>
+      <a-button type="primary" class="editable-add-btn" style="margin-bottom: 8px" @click="handleAdd">新增</a-button>
       <a-table bordered :data-source="dataSource" :columns="columns">
         <template #bodyCell="{ column, text, record }">
           <template v-if="column.dataIndex === 'name'">
@@ -24,15 +24,14 @@
         </template>
       </a-table>
     </template>
-  </Layouthead>
+  </layout>
 </template>
 
 <script>
 import { defineComponent, reactive, ref, onMounted, toRefs, computed } from 'vue'
-import Layouthead from '../../components/Layouthead'
 import { CheckOutlined, EditOutlined } from '@ant-design/icons-vue'
 export default defineComponent({
-  components: { Layouthead, CheckOutlined, EditOutlined },
+  components: { CheckOutlined, EditOutlined },
   setup() {
     const columns = [
       {

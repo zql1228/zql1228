@@ -1,20 +1,9 @@
 <template>
-  <a-layout>
-    <a-layout-header class="header">
-      <a-row :gutter="24" justify="space-between">
-        <a-col :span="4"><span style="color: #fff; font-size: 20px">系统管理</span></a-col>
-        <a-col :span="2">
-          <a-button type="link" style="color: #fff" @click="LoginOut"><LoginOutlined />退出</a-button></a-col
-        >
-      </a-row>
-    </a-layout-header>
-    <layout-menu></layout-menu>
-  </a-layout>
+  <layout> 首页 </layout>
 </template>
 <script>
 import { UserOutlined, LaptopOutlined, NotificationOutlined, LoginOutlined } from '@ant-design/icons-vue'
 import { defineComponent, ref } from 'vue'
-import LayoutMenu from '../components/Layout.vue'
 import { useRouter } from 'vue-router'
 import store from '../store'
 import { Modal } from 'ant-design-vue'
@@ -24,7 +13,6 @@ export default defineComponent({
     LaptopOutlined,
     NotificationOutlined,
     LoginOutlined,
-    LayoutMenu,
   },
 
   setup() {
